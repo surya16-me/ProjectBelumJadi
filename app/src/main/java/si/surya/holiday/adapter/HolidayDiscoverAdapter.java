@@ -49,6 +49,7 @@ public class HolidayDiscoverAdapter extends RecyclerView.Adapter<HolidayDiscover
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, HolidayDetail.class);
+                intent.putExtra("id", holidaysItems.get(position).getUuid());
                 intent.putExtra("hdDay", holidaysItems.get(position).getDate());
                 intent.putExtra("hdName", holidaysItems.get(position).getName());
                 context.startActivity(intent);

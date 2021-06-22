@@ -10,7 +10,7 @@
         />
     <item
         android:id="@+id/note"
-        android:title="Note"
+        android:title="Hari Penting"
         android:icon="@drawable/note"
         app:showAsAction="ifRoom"
         />

@@ -91,7 +91,7 @@ public class HolidaysItem{
 			",name = '" + name + '\'' + 
 			",weekday = '" + weekday + '\'' + 
 			",uuid = '" + uuid + '\'' + 
-			",observed = '" + observed + '\'' + 
-			"}";
+			",observed = '" + observed + '\'' +
+					"}";
 		}
 }
