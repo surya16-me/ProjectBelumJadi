@@ -9,12 +9,14 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Delete;
 
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.ArrayList;
@@ -30,6 +32,7 @@ public class NoteList extends Fragment {
     private ArchieveAdapter archieveAdapter;
     private ArrayList<ArchieveModel> listArchieve = new ArrayList<>();
     private ArchieveDatabase archieveDatabase;
+    private Button Hapus ;
 
     public NoteList() {
         // Required empty public constructor
@@ -46,6 +49,8 @@ public class NoteList extends Fragment {
 
 
     }
+
+
 
     @Override
     public void onViewCreated(@NonNull  View view,  Bundle savedInstanceState) {
@@ -64,6 +69,8 @@ public class NoteList extends Fragment {
 
         rvArchieve.setLayoutManager(new LinearLayoutManager(getContext()));
         rvArchieve.setAdapter(archieveAdapter);
+
+
 
     }
 }

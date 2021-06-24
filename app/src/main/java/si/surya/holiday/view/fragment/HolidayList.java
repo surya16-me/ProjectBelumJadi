@@ -59,6 +59,7 @@ public class HolidayList extends Fragment {
         rvHolidayDiscover.setAdapter(holidayDiscoverAdapter);
 
     }
+
     private Observer<ArrayList<HolidaysItem>> getHolidayDiscover = new Observer<ArrayList<HolidaysItem>>() {
         @Override
         public void onChanged(ArrayList<HolidaysItem> holidaysItems) {

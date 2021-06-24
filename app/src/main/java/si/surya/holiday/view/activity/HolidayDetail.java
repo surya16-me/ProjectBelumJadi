@@ -42,6 +42,8 @@ public class HolidayDetail extends AppCompatActivity {
         getIncomingIntent();
     }
 
+
+
     private void getIncomingIntent() {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
